@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% include ./head %>
+  </head>
+  <body>
+    <% include include/header %>
+    
+    
+    <div class="carousel-wrapper">
+      <div class="carousel">
+  
+        <img class="carousel__photo initial" src="http://placekitten.com/1600/900">
+        <img class="carousel__photo" style="background:gray">
+        <img class="carousel__photo" style="background:green">
+        <img class="carousel__photo" style="background:yellow">
+        <img class="carousel__photo" style="background:red">
+        
+        <div class="carousel__button--next"></div>
+        <div class="carousel__button--prev"></div>
+  
+      </div>
+    
+    </section>
+
+    <section class="notice-section">
+      <article>
+
+      </article>
+      <article>
+        
+      </article>
+      <article>
+        
+      </article>
+
+    </section>
+    
+    <section class="production-section">
+
+    </section>
+  
+    <section class="community-section">
+
+    </section>
+
+    <section class="notice-section">
+
+    </section>
+    
+    <% include include/footer %>
+  </body>
+</html>
+
+<script type="text/javascript" src="/javascripts/carousel.js"></script>
+<script>
+  
+  var carousel = new Carousel({
+          elem: 'carousel',
+          dots: true,
+          arrows: true,
+          buttons: true,
+          autoplay: true,
+          infinite: true
+        });
+
+</script>

@@ -1,0 +1,236 @@
+/* header */
+
+
+header {
+    max-width: 1060px;
+    width: auto; 
+    padding: 30px; 
+    z-index : 1000;
+    margin: 0 auto;
+   
+  }
+  
+  .logo {
+      font-size: 30px;
+      display:inline-block;
+      margin-right: 50px; 
+  }
+  
+  .category {
+      text-align: center;
+      display: inline-block; 
+      line-height: 30px; 
+  }
+  
+  .category li {
+      float: left; 
+      padding: 0 15px; 
+      font-weight: bold;  
+      font-size: 16px; 
+  }
+  
+  .category li:first-of-type {
+      padding-left: 0px;  
+  }
+  
+  
+  .category li.active{
+      border: 2px solid #ddd; 
+      border-radius : 20px; 
+  }
+   
+  
+  .header-right {
+      float: right;
+      display:inline-block; 
+      font-weight: bold;  
+      font-size: 16px; 
+      line-height: 30px; 
+  }
+  
+  
+  
+  
+  /* mainpage  */
+  
+  .main-container{
+      width: 100%; 
+  
+  }
+
+  /* Parent wrapper to carousel. Width can be changed as needed. */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    background: gray;
+    height: 500px; 
+    
+  }
+  
+  /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
+  .carousel-wrapper * {
+    box-sizing: border-box;
+  }
+  
+  /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
+  .carousel {
+      height: 100%; 
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+  .carousel__photo {
+    opacity: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+    margin: auto;
+    transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  
+  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+  .carousel__photo.initial,
+  .carousel__photo.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+  
+  /* Set 'z-index' to sit behind our '.active' item. */
+  .carousel__photo.prev,
+  .carousel__photo.next {
+    z-index: 800;
+  }
+  
+  /* Translate previous item to the left */
+  .carousel__photo.prev {
+    transform: translateX(-100%);
+  }
+  
+  /* Translate next item to the right */
+  .carousel__photo.next {
+    transform: translateX(100%);
+  }
+  
+  /* Style navigation buttons to sit in the middle, either side of the carousel. */
+  .carousel__button--prev,
+  .carousel__button--next {
+    position: absolute;
+    top:50%;
+    width: 3rem;
+    height: 3rem;
+    transform: translateY(-50%);
+    cursor: pointer; 
+    z-index: 1001; /* Sit on top of everything */
+  /*  opacity: 0;  Hide buttons until carousel is initialised 
+    transition:opacity 1s;*/
+  }
+  
+  .carousel__button--prev {
+    left:0;
+  }
+  
+  .carousel__button--next {
+    right:0;
+  }
+  
+  /* Use pseudo elements to insert arrows inside of navigation buttons */
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .carousel__button--next::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  
+  
+  /* subpage */
+
+  .sub-container {
+    max-width: 1100px; 
+    min-height: 400px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  aside{
+    width: 200px; 
+    padding:20px; 
+    box-sizing: border-box;
+    background:gray;
+  }
+
+  .sub-container .contents {
+    width: calc(100% - 215px);
+    padding:20px; 
+    box-sizing: border-box;
+    background:gray;
+  }
+  
+  
+  /* footer */
+  
+  footer{
+      /* position: fixed; */
+      width: 100%; 
+      box-sizing: border-box;
+      padding: 50px;
+      font-size: 13px; 
+      z-index : 1000;
+      background: #f0f0f0; 
+  }
+  
+  .footer {
+      max-width: 1060px;
+      margin: 0 auto; 
+      display: flex;
+      justify-content: space-between; 
+  }
+  
+  .footer-logo {
+      
+  }
+  
+  .footer-right{
+      text-align:right;	
+  }
+  
+  .terms{
+      display: flex;
+      margin-bottom: 15px; 
+  }
+  
+  .terms li {
+      margin-right: 20px; 
+  }
+  
+  .terms li:last-of-type {
+      margin-right: 0px; 
+  }
+  
+  .terms li::after {
+      content:"|"
+  }
+  
+  
+  .right-element {
+      margin-left: 30px
+  }
+  
+  
+  

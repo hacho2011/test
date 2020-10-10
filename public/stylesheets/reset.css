@@ -376,30 +376,112 @@ textarea {
 
 
 h1 {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 38px;
-	line-height: 140%;
+font-family: Noto Sans KR;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: -4px;
+text-align: left;
+
 }
 
 
 h2 {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 150%;
+font-family: Noto Sans KR;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -3px;
+text-align: left;
+
 }
 
 h3 {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 150%;
+font-family: Noto Sans KR;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 35px;
+letter-spacing: -1.7999999523162842px;
+text-align: left;
+
 }
 
 h4 {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 150%;
+font-family: Noto Sans KR;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: -1.7999999523162842px;
+text-align: left;
+
+}
+
+h5 {
+font-family: Black Han Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+h6 {
+font-family: Black Han Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.body1 {
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    
+}
+
+.body2 {
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    
+}
+
+.body3 {
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    
+}
+
+.copyright {
+font-family: Black Han Sans;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0.4000000059604645px;
+text-align: left;
+
 }

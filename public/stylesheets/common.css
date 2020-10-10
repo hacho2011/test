@@ -1,0 +1,21 @@
+/* margin */
+.marB-10 { margin-bottom: 10px;}
+.marB-15 { margin-bottom: 15px;}
+.marB-20 { margin-bottom: 20px;}
+.marB-30 { margin-bottom: 30px;}
+.marB-40 { margin-bottom: 40px;}
+
+
+
+/* flex  */
+.flex{
+    display:flex; 
+    justify-content: space-between;
+}
+
+
+
+/* color */
+.gray {
+ color : #BEBEBE;
+}

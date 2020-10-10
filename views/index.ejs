@@ -4,38 +4,42 @@
     <title><%= title %></title>
     <% include ./head %>
   </head>
-  <body class='main-container'>
-    <% include include/header %>
-    
-    <div class="carousel-wrapper">
-      <div class="carousel">
-        
-        <div class="carousel-item">
-          <div class="item-info">
-            <h6 class="carousel-category">카테고리</h6>
-            <h1 class="carousel-title">
-              원데이 클래스 데드리프트 오픈!
-            </h1>
-            <button class="btn">자세히보기</button>
+  <body class="main-container">
+    <div class="header">
+      <% include include/header %>
+      
+      <!-- 메인 슬라이드 -->
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          
+          <div class="carousel-item">
+            <div class="item-info">
+              <h6 class="carousel-category">카테고리</h6>
+              <h1 class="carousel-title">
+                원데이 클래스 데드리프트 오픈!
+              </h1>
+              <button class="btn">자세히보기</button>
+            </div>
+            <img src="/images/main-img.png" class="carousel-img" style="background:gray">
           </div>
-          <img src="/images/main-img.png" class="carousel-img" style="background:gray">
-        </div>
-        
-        <div class="carousel__button--next"></div>
-        <div class="carousel__button--prev"></div>
+          
+          <div class="carousel__button--next"></div>
+          <div class="carousel__button--prev"></div>
 
-        <div class="navigation">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-  
-      </div>
+          <div class="navigation">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     
+        </div>
+      
+      </div>
     </div>
 
+    <!-- 유튜브 -->
     <section class="youtube-section">
       <div class="section-title">
         <h3>운동친구 유튜브</h3>
@@ -45,18 +49,36 @@
           <img src="/svg/nextArrow.svg" class="arrow" alt="pre">
         </div>
       </div>
-      <article class=youtube-item>
-        <div class="thumb">
-
-        </div>
-        <h6 class="date">2020.10.10</h6>
-        <p class="title body1">액션 읽는 밤 4회 -핵금발 언니는 참지 않아!</p>
-        <p class="text body2">액션영화를 문학처럼 읽는다, 액션 읽는 밤 이번 영화는 2017년에 개봉한 샤를리즈 테론 주연의 영화 ‘아토믹 블론드’입니다.</p>
-
-      </article>
+      <div class="youtube-list">
+        <article class=youtube-item>
+          <div class="thumb">
+            <img src="/images/youtube01.png" alt="pre">
+          </div>
+          <h6 class="date">2020.10.10</h6>
+          <p class="title body1">액션 읽는 밤 4회 -핵금발 언니는 참지 않아!</p>
+          <p class="text body2">액션영화를 문학처럼 읽는다, 액션 읽는 밤 이번 영화는 2017년에 개봉한 샤를리즈 테론 주연의 영화 ‘아토믹 블론드’입니다.</p>
+        </article>
+        <article class=youtube-item>
+          <div class="thumb">
+            <img src="/images/youtube02.png" alt="pre">
+          </div>
+          <h6 class="date">2020.10.10</h6>
+          <p class="title body1">운동친구 첫 번째 원데이클래스 현장 스케치 -드디어 만난 우리!</p>
+          <p class="text body2">지난 6월 13일은 운동친구가 처음 여러분을 만난 날입니다. 초보부터 고수까지 모여서 알듯말듯 어려운 데드리프트를 기초부터 배웠습니다.</p>
+        </article>
+        <article class=youtube-item>
+          <div class="thumb">
+            <img src="/images/youtube03.png" alt="pre">
+          </div>
+          <h6 class="date">2020.10.10</h6>
+          <p class="title body1">액션 읽는 밤 4회 -핵금발 언니는 참지 않아!</p>
+          <p class="text body2">액션영화를 문학처럼 읽는다, 액션 읽는 밤 이번 영화는 2017년에 개봉한 샤를리즈 테론 주연의 영화 ‘아토믹 블론드’입니다.</p>
+        </article>
+      </div>
     </section>
     
-    <section class="production-section">
+    <!-- 클래스 -->
+    <section class="program-section">
       <div class="section-title">
         <h3>프로그램</h3>
         <div class="page-arrow">
@@ -65,61 +87,94 @@
           <img src="/svg/nextArrow.svg" class="arrow" alt="pre">
         </div>
       </div>
-      <article class="class-item flex">
-        <div class="thumb">
-
-        </div>
-        <div class="class-info">
-          <h6 class="state">
-            진행중
-          </h6>
-          <h4 class="title">원데이클래스: 주짓수</h4>
-          <ul class="class-detail">
-            <li>
-              <img src="/svg/coach.svg" class="arrow" alt="pre">
-              <span class="body2">고아라 선수</span>
-            </li>
-            <li>
-              <img src="/svg/calendar.svg" class="arrow" alt="pre">
-              <span class="body2">2020년 8월 18일 토요일</span>
-            </li>
-            <li>
-              <img src="/svg/time.svg" class="arrow" alt="pre">
-              <span class="body2">오후 4시</span>
-            </li>
-            <li>
-              <img src="/svg/place.svg" class="arrow" alt="pre">
-              <span class="body2">파이널유도멀티짐 도곡점</span>
-            </li>
-          </ul>
-          <button class="btn">자세히보기</button>
-          <button class="btn">닫기</button>
-        </div>
-
-      </article>
+      <div class="program-list">
+        <article class="program-item flex">
+          <div class="thumb">
+            <img src="/images/class01.png" alt="pre">
+          </div>
+          <div class="program-info">
+            <h6 class="state">
+              진행중
+            </h6>
+            <h4 class="title">원데이클래스: 주짓수</h4>
+            <ul class="program-detail">
+              <li>
+                <img src="/svg/coach.svg"  alt="pre">
+                <span class="body2">고아라 선수</span>
+              </li>
+              <li>
+                <img src="/svg/calendar.svg" alt="pre">
+                <span class="body2">2020년 8월 18일 토요일</span>
+              </li>
+              <li>
+                <img src="/svg/time.svg" alt="pre">
+                <span class="body2">오후 4시</span>
+              </li>
+              <li>
+                <img src="/svg/place.svg" alt="pre">
+                <span class="body2">파이널유도멀티짐 도곡점</span>
+              </li>
+            </ul>
+            <button class="btn" onClick="document.location.href='/notice'">자세히보기</button>
+            <button class="btn">닫기</button>
+          </div>
+        </article>
+        <article class="program-item flex">
+          <div class="thumb">
+            <img src="/images/class02.png" alt="pre">
+          </div>
+          <div class="program-info">
+            <h6 class="state">
+              진행중
+            </h6>
+            <h4 class="title">원데이클래스: 주짓수</h4>
+            <ul class="program-detail">
+              <li>
+                <img src="/svg/coach.svg"  alt="pre">
+                <span class="body2">고아라 선수</span>
+              </li>
+              <li>
+                <img src="/svg/calendar.svg" alt="pre">
+                <span class="body2">2020년 8월 18일 토요일</span>
+              </li>
+              <li>
+                <img src="/svg/time.svg" alt="pre">
+                <span class="body2">오후 4시</span>
+              </li>
+              <li>
+                <img src="/svg/place.svg" alt="pre">
+                <span class="body2">파이널유도멀티짐 도곡점</span>
+              </li>
+            </ul>
+            <button class="btn">자세히보기</button>
+            <button class="btn">닫기</button>
+          </div>
+        </article>
+      </div>
     </section>
   
-    <section class="notice-section flex">
+    <!-- 공지사항 -->
+    <section class="news-section flex">
       <div class="half-section">
         <h3 class="marB-20">공지사항</h3>
-        <ul>
-          <li class="flex marB-10">
+        <ul id="notice-list">
+          <li class="flex marB-10" onClick="document.location.href='/notice'" >
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
           </li>
-          <li class="flex marB-10">
+          <li class="flex marB-10" onClick="document.location.href='/notice'">
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
           </li>
-          <li class="flex marB-10">
+          <li class="flex marB-10" onClick="document.location.href='/notice'">
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
           </li>
-          <li class="flex marB-10">
+          <li class="flex marB-10" onClick="document.location.href='/notice'">
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
           </li>
-          <li class="flex">
+          <li class="flex" onClick="document.location.href='/notice'">
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
           </li>
@@ -128,7 +183,7 @@
 
       <div class="half-section">
         <h3 class="marB-20">대외소식</h3>
-        <ul>
+        <ul id="external-list">
           <li class="flex marB-10">
             <span class="body3">7월 챌린저스 챌린지 안내</span>
             <h6 class="gray">2020. 00. 00</h6>
@@ -154,6 +209,7 @@
     </section>
 
 
+    <!-- 라뷰 -->
     <section class="review-section">
 
         <div class="review-list">
@@ -184,15 +240,47 @@
     </section>
 
 
-
-    <section class="production-section">
+  <!-- 굿즈 -->
+    <section class="product-section">
       <div class="section-title">
         <h3>굿즈</h3>
-        <div class="page-arrow">
-          <img src="/svg/preArrow.svg" class="arrow" alt="pre">
-          <h5 class="current-page"> 1/3</h5>
+        <div class="page-arrow" onClick="document.location.href='/production'">
+          <h5 class="current-page"> 굿즈더보기</h5>
           <img src="/svg/nextArrow.svg" class="arrow" alt="pre">
         </div>
+      </div>
+
+      <div class="product-list">
+        <article class="product-item flex">
+          <div class="thumb">
+            <img src="/images/product01.png" alt="pre">
+          </div>
+          <div class="product-info">
+            <h6 class="state">
+              진행중
+            </h6>
+            <h4 class="title">운동친구 텀블러</h4>
+            <p class="body2 marB-30">마실 때는 흐르지 않고, 세척하기는 간편한 운동친구 텀블러를 소개합니다!</p>
+
+            <button class="btn">자세히보기</button>
+            <button class="btn">닫기</button>
+          </div>
+        </article>
+        <article class="product-item flex">
+          <div class="thumb">
+            <img src="/images/product02.png" alt="pre">
+          </div>
+          <div class="product-info">
+            <h6 class="state">
+              진행중
+            </h6>
+            <h4 class="title">원데이클래스: 주짓수</h4>
+            <p class="body2 marB-30">마실 때는 흐르지 않고, 세척하기는 간편한 운동친구 텀블러를 소개합니다!</p>
+
+            <button class="btn">자세히보기</button>
+            <button class="btn">닫기</button>
+          </div>
+        </article>
       </div>
 
     </section>
@@ -200,6 +288,7 @@
     
     <% include include/footer %>
   </body>
+  <% include include/searchDim %>
 </html>
 
 <script type="text/javascript" src="/javascripts/carousel.js"></script>

@@ -1,16 +1,21 @@
 <header>
-	
-
-	<div class="logo"><span onClick="document.location.href='main'">코니멀</span></div>
-	<ul class="category">
-		<li><div onClick="document.location.href='#'">코니멀소개</div></li>
-		<li><div onClick="document.location.href='/pet_dictionary/pet_dictionary'">펫과사전</div></li>
-		<li><div onClick="document.location.href='/community/community-list'">커뮤니티</div></li>
+	<div class="logo">
+	<span onClick="document.location.href='/'">
+			<img src="/svg/logo.svg">
+		</span>
+	</div>
+	<ul class="nav-category">
+		<li onclick="location.href='/introduction'">운동친구</li>
+		<li onclick="location.href='/program'">프로그램</li>
+		<li onclick="location.href='/production'">굿즈</li>
+		<li onclick="location.href='/content'">컨텐츠</li>
+		<li onclick="searchBtn()">검색</li>
 	</ul>
 
-	<div class="header-right">
-		<div class="btn mypage-btn"><button onclick="location.href='/my-page/my-page'">마이페이지</button></div>
-		<div class="btn logout-btn"><button onclick="location.href='/logout'">${nickname} Logout</button></div>
-	</div>
+	<span class="header-right">
+		<button class="btn small" onclick="location.href='/my-page/my-page'">로그인</button>
+		<button class="btn small" onclick="location.href='/logout'">장바구니</button>
+	</span>
 	
 </header>
+

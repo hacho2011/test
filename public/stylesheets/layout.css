@@ -1,39 +1,49 @@
 /* header */
 
+.header {
+  width: 100%; 
+  height: auto; 
+  background: url(/images/main-background.png);
+}
+
 header {
     max-width: 1060px;
     width: auto; 
-    padding: 30px; 
+    height: 106px; 
+    line-height: 106px;
+    box-sizing: border-box;
     z-index : 1000;
     margin: 0 auto;
-   
+    text-align: center;
   }
   
   .logo {
+      float:left;
       font-size: 30px;
       display:inline-block;
       margin-right: 50px; 
+      cursor: pointer;
   }
   
-  .category {
-      text-align: center;
+  .nav-category {
       display: inline-block; 
-      line-height: 30px; 
   }
   
-  .category li {
+  .nav-category li {
       float: left; 
-      padding: 0 15px; 
-      font-weight: bold;  
+      padding: 0 10px; 
+      font-weight: 400;  
       font-size: 16px; 
+      font-family: Black Han Sans;
+      cursor: pointer;
   }
   
-  .category li:first-of-type {
+  .nav-category li:first-of-type {
       padding-left: 0px;  
   }
   
   
-  .category li.active{
+  .nav-category li.active{
       border: 2px solid #ddd; 
       border-radius : 20px; 
   }
@@ -44,7 +54,6 @@ header {
       display:inline-block; 
       font-weight: bold;  
       font-size: 16px; 
-      line-height: 30px; 
   }
   
   
@@ -62,11 +71,28 @@ header {
 
   }
 
+  .main-container .youtube-section {
+    margin-bottom: 50px; 
+  }
+
+  .main-container .product-section {
+    margin-bottom: 100px; 
+  }
+
+  .youtube-list , 
+  .program-list , 
+  .product-list {
+    display:flex; 
+    justify-content: space-between;
+  }
+
   .section-title {
     display:flex;
     justify-content: space-between;  
     margin-bottom: 30px; 
+    line-height: 35px;
   }
+
 
   .half-section {
     width: calc( 50% - 10px);
@@ -74,6 +100,12 @@ header {
     box-sizing: border-box;
     background: #FAFAFA;
   }
+
+  #notice-list li ,
+  #external-list {
+    cursor: pointer
+  }
+
 
   .main-container section.review-section {
     width: 100%; 
@@ -120,13 +152,19 @@ header {
   /* subpage */
 
   .sub-container {
-    max-width: 1100px; 
+    max-width: 1060px; 
     min-height: 400px; 
     margin: 0 auto; 
-    display: flex;
-    justify-content: space-between; 
+    padding: 100px 0; 
   }
   
+  .page-title {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px; 
+  }
+
   aside{
     width: 200px; 
     padding:20px; 
@@ -151,7 +189,7 @@ header {
       padding: 50px;
       font-size: 13px; 
       z-index : 1000;
-      background: #f0f0f0; 
+      background: url(/images/footer-background.png); 
   }
   
   .footer {

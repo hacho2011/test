@@ -1,0 +1,115 @@
+/* about us */
+
+.about-us-img img {
+  width: 100%;
+}
+
+/* about record */
+.about-record-info {
+  display: flex;
+  align-items: flex-start;
+}
+.about-record-info .date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.about-record-info .title {
+  margin-bottom: 10px;
+}
+.about-record-info img {
+  margin-right: 20px;
+}
+
+/* about BI info */
+
+.BI-img {
+  background: #fafafa;
+  height: 400px;
+  padding: 0 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.BI-img .logo {
+  width: 207px;
+}
+.friend-letters-kor .letter-kor {
+  margin: 15px 13px 13px 0;
+}
+.mint-logo .letter-kor path {
+  fill: #00ad84;
+}
+.friend-letters-en {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-BI-section .colors {
+  display: flex;
+}
+.about-BI-section .color {
+  display: flex;
+  align-items: center;
+}
+.about-BI-section .color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.about-BI-section .color-code {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.6px;
+  margin-right: 24px;
+}
+.about-BI-section .color:nth-child(1) .color-circle {
+  background-color: #00ad84;
+}
+.about-BI-section .color:nth-child(1) .color-code {
+  color: #00ad84;
+}
+
+.about-BI-section .color:nth-child(2) .color-circle {
+  background-color: #d4bfff;
+}
+.about-BI-section .color:nth-child(2) .color-code {
+  color: #d4bfff;
+}
+.about-BI-section .color:nth-child(3) .color-circle {
+  background-color: #231815;
+}
+.about-BI-section .color:nth-child(3) .color-code {
+  color: #231815;
+}
+
+/* about member section */
+.about-member .card {
+  padding-left: 70px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background: url(/images/member01.png);
+  margin-bottom: 20px;
+}
+
+.about-member .info-element {
+  display: flex;
+}
+.about-member .info-element .body2 {
+  margin: 4px 0 0 10px;
+}
+.about-member .info-header {
+  margin-bottom: 10px;
+}
+.about-member .info-header .msg {
+  margin-top: 4px;
+}

@@ -1,0 +1,16 @@
+.about-section-title {
+}
+.about-section-contents {
+  width: 700px;
+}
+.about-us-info .body1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: -0.6px;
+  margin-bottom: 45px;
+}
+.about-us-img img {
+  width: 100%;
+}

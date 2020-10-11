@@ -1,0 +1,199 @@
+.btn {
+    height: 40px;
+    line-height: 38px;
+    padding: 0px 25px ;
+    border: 4px solid #231815; 
+    box-sizing: border-box;
+    color: #231815;
+    font-family: Black Han Sans;
+    font-weight: 400;  
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn.disable {
+    border: 4px solid #D2D2D2; 
+    color: #D2D2D2;
+}
+
+.btn:hover {
+    background: #D4BFFF;
+}
+
+.btn.small {
+    height: 32px;
+    line-height: 30px;
+}
+
+/* arrow */
+.page-arrow {
+    height: 24px; 
+}
+
+.current-page {
+    display:inline-block;
+    color: #00AD84;
+    margin: 0 18px;
+}
+
+.arrow {
+    width: 8px;
+    height: 14px; 
+    cursor: pointer;
+}
+
+
+/* youtube-item */
+
+.youtube-item {
+    width: 340px; 
+    height: 386px; 
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.youtube-item .thumb {
+    width: 100%; 
+    height: 191px; 
+    background: #c4c4c4; 
+    margin-bottom: 15px;
+}
+
+.youtube-item .date {
+    margin-bottom: 10px;
+}
+
+.youtube-item .title {
+    margin-bottom: 10px;
+}
+
+
+
+/* program-item */
+
+.program-item {
+    width: 520px;
+    height: 318px;
+    background: #FAFAFA;
+}
+
+.program-item .thumb{
+    width: 250px;
+    height: 100%; 
+}
+
+.program-info {
+    width: calc( 100% - 250px );
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.program-info .state {
+    height: 24px;
+    background: url(/svg/line.svg) no-repeat;
+    background-position: left bottom;
+    margin-bottom: 15px; 
+}
+
+.program-info .title{
+    margin-bottom: 10px; 
+}
+
+.program-detail {
+    margin-bottom: 40px; 
+}
+
+.program-detail li {
+    line-height: 24px;
+    margin-bottom: 5px; 
+}
+
+
+/* product-item */
+.product-item {
+    width: calc( 50% - 10px ); 
+    height: 250px; 
+    background: #fafafa;
+}
+
+.product-item .thumb{
+    width: 250px;
+    height: 100%; 
+}
+
+.product-info {
+    width: calc( 100% - 250px );
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.product-info .state {
+    height: 24px;
+    background: url(/svg/line.svg) no-repeat;
+    background-position: left bottom;
+    margin-bottom: 15px; 
+}
+
+.product-info .title{
+    margin-bottom: 10px; 
+}
+
+
+/* program-item */
+
+
+
+
+
+/* slider carousel */
+
+.navigation {
+
+}
+
+.navigation span {
+    display:inline-block;
+    width: 14px; 
+    height: 14px; 
+    border-radius: 50%;
+    border: 3px solid #231815;
+    box-sizing: border-box;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.navigation span.active {
+    background: #231815;
+}
+
+
+/* search */
+
+.dim {
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.7);
+    z-index: 10000;
+    position: fixed;
+    top: 0;     
+    display: none;
+}
+
+.dim.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    text-align: center;;
+}
+
+.search-box input {
+    border: 4px solid #231815;
+    box-sizing: border-box;
+    background: #fff;
+    width: 480px; 
+    height: 40px; 
+}
+

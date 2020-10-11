@@ -19,5 +19,17 @@ router.get('/notice', function(req, res, next) {
   res.render('notice/notice', { title: 'Express' });
 });
 
+router.get('/production', function(req, res, next) {
+  res.render('production/production', { title: 'Express' });
+});
+
+router.get('/program', function(req, res, next) {
+  res.render('program/program', { title: 'Express' });
+});
+
+router.get('/youtube', function(req, res, next) {
+  res.render('youtube/youtube', { title: 'Express' });
+});
+
 
 module.exports = router;

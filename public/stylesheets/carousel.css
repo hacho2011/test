@@ -1,0 +1,41 @@
+
+.carousel-wrapper {
+    width: 100%; 
+    height: 490px; 
+    margin-bottom: 60px; 
+}
+
+.carousel {
+    width: 1060px; 
+    margin: 0 auto; 
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 55px; 
+}
+
+.item-info {
+    width: 360px;
+    padding-top : 110px; 
+    word-break: keep-all;
+}
+
+.carousel-category {
+    height: 30px;
+    background: url(/svg/line.svg) no-repeat;
+    background-position: left bottom;
+    margin-bottom: 15px; 
+}
+
+.carousel-title {
+    margin-bottom: 30px; 
+}
+
+
+.carousel-img {
+    position: absolute;
+    left: 360px;
+}

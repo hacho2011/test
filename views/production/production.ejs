@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ../head %>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <% include ../include/header %>
+    </div>
+    <div class="sub-container">
+        <div class="page-title">
+            <h2>굿즈</h2>
+            <div class="page-arrow">
+                <img src="/svg/preArrow.svg" class="arrow" alt="pre">
+                <h5 class="current-page"> 전체</h5>
+                <img src="/svg/nextArrow.svg" class="arrow" alt="pre">
+            </div>
+        </div>
+        <div class="product-list">
+            <article class="product-item flex">
+              <div class="thumb">
+                <img src="/images/product01.png" alt="pre">
+              </div>
+              <div class="product-info">
+                <h6 class="state">
+                  진행중
+                </h6>
+                <h4 class="title">운동친구 텀블러</h4>
+                <p class="body2 marB-30">마실 때는 흐르지 않고, 세척하기는 간편한 운동친구 텀블러를 소개합니다!</p>
+    
+                <button class="btn">자세히보기</button>
+                <button class="btn">닫기</button>
+              </div>
+            </article>
+            <article class="product-item flex">
+              <div class="thumb">
+                <img src="/images/product02.png" alt="pre">
+              </div>
+              <div class="product-info">
+                <h6 class="state">
+                  진행중
+                </h6>
+                <h4 class="title">원데이클래스: 주짓수</h4>
+                <p class="body2 marB-30">마실 때는 흐르지 않고, 세척하기는 간편한 운동친구 텀블러를 소개합니다!</p>
+    
+                <button class="btn">자세히보기</button>
+                <button class="btn">닫기</button>
+              </div>
+            </article>
+          </div>
+    </div>
+    <% include ../include/footer %>
+</body>
+</html>

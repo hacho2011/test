@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ../head %>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <% include ../include/header %>
+    </div>
+    <div class="sub-container">
+        <div class="page-title">
+            <h2>프로그램</h2>
+            <div class="page-arrow">
+                <img src="/svg/preArrow.svg" class="arrow" alt="pre">
+                <h5 class="current-page"> 전체</h5>
+                <img src="/svg/nextArrow.svg" class="arrow" alt="pre">
+            </div>
+        </div>
+        <div class="program-list">
+            <article class="program-item flex">
+              <div class="thumb">
+                <img src="/images/class01.png" alt="pre">
+              </div>
+              <div class="program-info">
+                <h6 class="state">
+                  진행중
+                </h6>
+                <h4 class="title">원데이클래스: 주짓수</h4>
+                <ul class="program-detail">
+                  <li>
+                    <img src="/svg/coach.svg"  alt="pre">
+                    <span class="body2">고아라 선수</span>
+                  </li>
+                  <li>
+                    <img src="/svg/calendar.svg" alt="pre">
+                    <span class="body2">2020년 8월 18일 토요일</span>
+                  </li>
+                  <li>
+                    <img src="/svg/time.svg" alt="pre">
+                    <span class="body2">오후 4시</span>
+                  </li>
+                  <li>
+                    <img src="/svg/place.svg" alt="pre">
+                    <span class="body2">파이널유도멀티짐 도곡점</span>
+                  </li>
+                </ul>
+                <button class="btn" onClick="document.location.href='/notice'">자세히보기</button>
+                <button class="btn">닫기</button>
+              </div>
+            </article>
+            <article class="program-item flex">
+              <div class="thumb">
+                <img src="/images/class02.png" alt="pre">
+              </div>
+              <div class="program-info">
+                <h6 class="state">
+                  진행중
+                </h6>
+                <h4 class="title">원데이클래스: 주짓수</h4>
+                <ul class="program-detail">
+                  <li>
+                    <img src="/svg/coach.svg"  alt="pre">
+                    <span class="body2">고아라 선수</span>
+                  </li>
+                  <li>
+                    <img src="/svg/calendar.svg" alt="pre">
+                    <span class="body2">2020년 8월 18일 토요일</span>
+                  </li>
+                  <li>
+                    <img src="/svg/time.svg" alt="pre">
+                    <span class="body2">오후 4시</span>
+                  </li>
+                  <li>
+                    <img src="/svg/place.svg" alt="pre">
+                    <span class="body2">파이널유도멀티짐 도곡점</span>
+                  </li>
+                </ul>
+                <button class="btn">자세히보기</button>
+                <button class="btn">닫기</button>
+              </div>
+            </article>
+        </div>
+    </div>
+    <% include ../include/footer %>
+</body>
+</html>

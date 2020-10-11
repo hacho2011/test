@@ -1,13 +1,5 @@
 /* about us */
 
-.about-us-info .body1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 29px;
-  letter-spacing: -0.6px;
-  margin-bottom: 45px;
-}
 .about-us-img img {
   width: 100%;
 }
@@ -33,14 +25,7 @@
 }
 
 /* about BI info */
-.about-BI-info .body1 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 29px;
-  letter-spacing: -0.6000000238418579px;
-  text-align: left;
-}
+
 .BI-img {
   background: #fafafa;
   height: 400px;
@@ -87,4 +72,28 @@
 }
 .about-BI-section .color:nth-child(3) .color-code {
   color: #231815;
+}
+
+/* about member section */
+.about-member .card {
+  padding-left: 70px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background: url(/images/member01.png);
+  margin-bottom: 20px;
+}
+
+.about-member .info-element {
+  display: flex;
+}
+.about-member .info-element .body2 {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.about-member .info-header {
+  margin-bottom: 10px;
+}
+.about-member .info-header .msg {
+  margin-top: 4px;
 }

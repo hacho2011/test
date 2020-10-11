@@ -29,8 +29,25 @@
 .BI-img {
   background: #fafafa;
   height: 400px;
+  padding: 0 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.BI-img .logo {
+  width: 207px;
+}
+.friend-letters-kor .letter-kor {
+  margin: 15px 13px 13px 0;
+}
+.mint-logo .letter-kor path {
+  fill: #00ad84;
+}
+.friend-letters-en {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about-BI-section .colors {
   display: flex;
 }
@@ -88,8 +105,7 @@
   display: flex;
 }
 .about-member .info-element .body2 {
-  margin-top: 4px;
-  margin-left: 10px;
+  margin: 4px 0 0 10px;
 }
 .about-member .info-header {
   margin-bottom: 10px;

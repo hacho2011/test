@@ -34,20 +34,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.BI-img .logo {
-  width: 207px;
-}
-.friend-letters-kor .letter-kor {
-  margin: 15px 13px 13px 0;
-}
-.mint-logo .letter-kor path {
-  fill: #00ad84;
-}
-.friend-letters-en {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .about-BI-section .colors {
   display: flex;
 }

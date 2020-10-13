@@ -213,3 +213,44 @@
     height: 40px; 
 }
 
+/* board */
+
+.board-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.board-container{
+    display:flex; 
+    justify-content: space-between;
+}
+
+.board-header {
+    width: 15%;
+    margin-right: 10px; 
+}
+
+.board-info .type {
+    display:block;
+    font-size: 14px;
+    font-weight:400;
+    color: #bebebe;
+    line-height: 25px;
+}
+
+.board-info .data {
+    display:block;
+    font-size: 16px;
+    font-weight:700;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.board-content {
+    width: calc( 85% - 10px);
+    margin-bottom: 100px; 
+}
+
+.board-content p , .board-content li{
+    line-height: 25px;
+}

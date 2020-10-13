@@ -104,8 +104,8 @@ header {
   height: 308px;
   background: #00ad84;
   text-align: center;
-  padding: 40px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .review-list {

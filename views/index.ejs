@@ -7,35 +7,49 @@
   <body class="main-container">
     <div class="header">
       <% include include/header %>
-      
-      <!-- 메인 슬라이드 -->
-      <div class="carousel-wrapper">
-        <div class="carousel">
-          
-          <div class="carousel-item">
-            <div class="item-info">
-              <h6 class="carousel-category">카테고리</h6>
-              <h1 class="carousel-title">
-                원데이 클래스 데드리프트 오픈!
-              </h1>
-              <button class="btn">자세히보기</button>
-            </div>
-            <img src="/images/main-img.png" class="carousel-img" style="background:gray">
-          </div>
-          
-          <div class="carousel__button--next"></div>
-          <div class="carousel__button--prev"></div>
 
-          <div class="navigation">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-item">
+              <div class="item-info">
+                <h6 class="carousel-category">카테고리</h6>
+                <h1 class="carousel-title">
+                  원데이 클래스 데드리프트 오픈!
+                </h1>
+                <button class="btn">자세히보기</button>
+                <div class="swiper-pagination"></div>
+              </div>
+              <img src="/images/main-img.png" class="carousel-img" style="background:gray">
+            </div> 
           </div>
-    
+          <div class="swiper-slide">
+            <div class="carousel-item">
+              <div class="item-info">
+                <h6 class="carousel-category">카테고리</h6>
+                <h1 class="carousel-title">
+                  원데이 클래스 데드리프트 오픈!
+                </h1>
+                <button class="btn">자세히보기</button>
+              </div>
+              <img src="/images/main-img.png" class="carousel-img" style="background:gray">
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-item">
+              <div class="item-info">
+                <h6 class="carousel-category">카테고리</h6>
+                <h1 class="carousel-title">
+                  원데이 클래스 데드리프트 오픈!
+                </h1>
+                <button class="btn">자세히보기</button>
+              </div>
+              <img src="/images/main-img.png" class="carousel-img" style="background:gray">
+            </div> 
+          </div>
+        <!-- Add Pagination -->
         </div>
-      
+        
       </div>
     </div>
 
@@ -210,10 +224,12 @@
 
 
     <!-- 라뷰 -->
+
     <section class="review-section">
 
-        <div class="review-list">
-          <article class="review-item">
+      <div class="review-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <h6 class="review-title">워크숍 후기</h6>
             <span class="review-star">
               <img src="/svg/star.svg" alt="star">
@@ -224,21 +240,31 @@
             </span>
             <span class="review-text body1">
               강사님부터 수강생까지 전부 여성이라 정말 편하게 운동할 수 있었어요! <br>
-이렇게 쾌적하게 운동할 수 있다니... 운동친구 잊지 못해 ㅠㅠ
+      이렇게 쾌적하게 운동할 수 있다니... 운동친구 잊지 못해 ㅠㅠ
             </span>
             <span class="review-user">수강생 김*순 님</span>
-          </article>
-        </div>
-    
-          <div class="navigation">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
           </div>
-    </section>
+          <div class="swiper-slide">
+            <h6 class="review-title">워크숍 후기</h6>
+            <span class="review-star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+            </span>
+            <span class="review-text body1">
+              강사님부터 수강생까지 전부 여성이라 정말 편하게 운동할 수 있었어요! <br>
+      이렇게 쾌적하게 운동할 수 있다니... 운동친구 잊지 못해 ㅠㅠ
+            </span>
+            <span class="review-user">수강생 김*순 님</span>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
 
+    </section>
 
   <!-- 굿즈 -->
     <section class="product-section">
@@ -254,6 +280,13 @@
         <article class="product-item flex">
           <div class="thumb">
             <img src="/images/product01.png" alt="pre">
+            <span class="product-star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+            </span>
           </div>
           <div class="product-info">
             <h6 class="state">
@@ -269,6 +302,13 @@
         <article class="product-item flex">
           <div class="thumb">
             <img src="/images/product02.png" alt="pre">
+            <span class="product-star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+              <img src="/svg/star.svg" alt="star">
+            </span>
           </div>
           <div class="product-info">
             <h6 class="state">
@@ -290,9 +330,38 @@
   </body>
   <% include include/searchDim %>
 </html>
+<style>
+ 
+</style>
 
-<script type="text/javascript" src="/javascripts/carousel.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script>
+
+var swiper = new Swiper('.main-swiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+});
+
+var verticalSwiper = new Swiper('.review-swiper', {
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
+    },
+});
 
 
 </script>

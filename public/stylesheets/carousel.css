@@ -62,10 +62,7 @@
     overflow: hidden;
 }
 
-.review-swiper .swiper-slide {
-    padding: 40px; 
-    box-sizing: border-box;
-}
+
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 40px;
 }

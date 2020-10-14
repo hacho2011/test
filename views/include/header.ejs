@@ -5,10 +5,22 @@
     </span>
   </div>
   <ul class="nav-category">
-    <li onclick="location.href='/member'">운동친구</li>
+    <li class="sub introduction">
+      <span onclick="location.href='/member'">운동친구</span>
+      <ul class="sub-category introduction">
+        <li onclick="location.href='/about'"><span>소개</span></li>
+        <li onclick="location.href='/member'"><span>멤버</span></li>
+      </ul>
+    </li>
     <li onclick="location.href='/program'">프로그램</li>
     <li onclick="location.href='/production'">굿즈</li>
-    <li onclick="location.href='/content'">컨텐츠</li>
+    <li class="sub contents">
+      <span onclick="location.href='/youtube'" >컨텐츠</span>
+      <ul class="sub-category contents">
+        <li onclick="location.href='/youtube'">유튜브</li>
+        <li onclick="location.href='/about'">글글</li>
+      </ul>
+    </li>
     <li onclick="searchBtn()">검색</li>
   </ul>
 
@@ -21,3 +33,6 @@
     </button>
   </span>
 </header>
+
+<script>
+</script>

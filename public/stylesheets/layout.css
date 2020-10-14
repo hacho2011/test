@@ -8,10 +8,10 @@
 
 header {
   max-width: 1060px;
-  width: auto;
   height: 106px;
-  line-height: 106px;
-  box-sizing: border-box;
+  display:flex; 
+  align-items: center;
+  justify-content: space-between;
   z-index: 1000;
   margin: 0 auto;
   text-align: center;
@@ -29,22 +29,48 @@ header {
   display: inline-block;
 }
 
-.nav-category li {
+.nav-category * {
+  font-family: Black Han Sans;
+}
+
+.nav-category > li {
   float: left;
+  display:flex;
   padding: 0 10px;
   font-weight: 400;
   font-size: 16px;
-  font-family: Black Han Sans;
-  cursor: pointer;
+  vertical-align: middle;
 }
 
-.nav-category li:first-of-type {
+.nav-category > li:first-of-type {
   padding-left: 0px;
 }
 
-.nav-category li.active {
-  border: 2px solid #ddd;
-  border-radius: 20px;
+
+.sub-category {
+  display:flex;
+  height: 20px; 
+  max-width: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity ease-in 0.5s ,max-width 0.4s;
+}
+
+.sub-category li {
+  display:block;
+  margin-left: 10px;
+  word-break: keep-all;
+  color:white;
+}
+
+.nav-category .introduction:hover .sub-category,
+.nav-category .contents:hover .sub-category{
+  opacity: 1;
+  max-width: 90px;
+}
+
+.nav-category .introduction:hover {
+  
 }
 
 .header-right {
@@ -102,6 +128,7 @@ header {
 .main-container section.review-section {
   width: 100%;
   height: 308px;
+  padding: 40px; 
   background: #00ad84;
   text-align: center;
   box-sizing: border-box;
@@ -234,6 +261,11 @@ footer {
   border: 4px solid #231815;
   box-sizing: border-box;
 }
+
+.footer-right .subscribe button:hover {
+  background: #231815;
+  color: white;
+}
 .footer-right .subscribe button h5 {
   display: inline;
 }
@@ -260,4 +292,67 @@ footer .copyright h5 {
   line-height: 12px;
   letter-spacing: 0.4px;
   display: inline;
+}
+
+
+
+
+/*  */
+
+/* The Magic */
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 6em;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+  width: 20px;
+    overflow: hidden;
+    transition: height .25s;
+}
+
+/* Aesthetic */
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 20%;
+    display:flex;
+    font-family: "PT Sans" sans-serif
+}
+
+.accordion .accordion-item {
+  background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+  border-bottom: 1px solid #666;
+  color: #eee;
+}
+.accordion .accordion-item p {
+}
+
+.accordion h1 {
+  margin: 0;
+  word-break: keep-all;
+
+}
+
+.accordion .accordion-item:nth-child(1) {
+  background-color: hsl(200, 80%, 60%);
+  background-image: linear-gradient(-90deg, hsl(200, 80%, 60%), hsl(200, 80%, 45%) 2em, hsl(200, 80%, 60%));
+
+}
+
+.accordion .accordion-item:nth-child(2) {
+  background-color: hsl(280, 60%, 45%);
+  background-image: linear-gradient(-90deg, hsl(280, 80%, 60%), hsl(280, 60%, 45%) 2em, hsl(280, 80%, 60%));
+}
+
+.accordion .accordion-item:nth-child(3) {
+  background-color: hsl(40, 80%, 40%);
+  background-image: linear-gradient(-90deg, hsl(40, 80%, 60%), hsl(40, 80%, 45%) 2em, hsl(40, 80%, 60%));
+}
+
+.accordion .accordion-item:nth-child(4) {
+  background-color: hsl(80, 40%, 40%);
+  background-image: linear-gradient(-90deg, hsl(80, 80%, 40%), hsl(80, 80%, 35%) 2em, hsl(80, 80%, 40%));
 }

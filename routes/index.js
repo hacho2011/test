@@ -38,5 +38,9 @@ router.get('/column', function (req, res, next) {
   res.render('column/column', { title: 'Express' });
 });
 
+router.get('/column/detail', function (req, res, next) {
+  res.render('column/column_detail', { title: 'Express' });
+});
+
 
 module.exports = router;

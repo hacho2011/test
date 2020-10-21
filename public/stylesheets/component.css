@@ -58,6 +58,10 @@
     background: #c4c4c4; 
     margin-bottom: 15px;
 }
+.youtube-item .thumb img{
+    width:100%;
+    height:100%;
+}
 
 .youtube-item .date {
     margin-bottom: 10px;
@@ -154,13 +158,6 @@
     margin-bottom: 10px; 
 }
 
-
-/* program-item */
-
-
-
-
-
 /* slider carousel */
 
 .navigation {
@@ -253,4 +250,13 @@
 
 .board-content p , .board-content li{
     line-height: 25px;
+}
+
+.board-content .board-img{
+    width:100%;
+    height:500px;
+}
+.board-img img{
+    width:100%;
+    height:100%;
 }

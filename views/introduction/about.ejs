@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <% include ../head %>
-    <title>Document</title>
-  </head>
-  <body class="about-container">
-    <div class="header"><% include ../include/header %></div>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <% include ../head %>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header"><% include ../include/header %></div>
+  <div class="about-container">
     <!-- about us -->
     <section class="about-us-section">
-      <div class="about-section-title"><h2>운동친구 소개</h2></div>
+      <div class="about-section-title">
+        <h2>운동친구 소개</h2>
+      </div>
       <div class="about-section-contents">
         <div class="about-us-info">
           <p class="body3">
@@ -43,7 +47,9 @@
     <!-- about record -->
     <section class="about-record-section">
       <div class="record-container">
-        <div class="about-section-title"><h2>활동기록</h2></div>
+        <div class="about-section-title">
+          <h2>활동기록</h2>
+        </div>
         <div class="about-section-contents">
           <div class="about-record-info">
             <img src="/svg/pink_star.svg" />
@@ -66,7 +72,9 @@
     </section>
     <!-- about BI -->
     <section class="about-BI-section">
-      <div class="about-section-title"><h2>운동친구 BI</h2></div>
+      <div class="about-section-title">
+        <h2>운동친구 BI</h2>
+      </div>
       <div class="about-section-contents">
         <div class="about-BI-info marB-40">
           <p class="body3">
@@ -78,32 +86,35 @@
         </div>
         <div class="BI-img marB-30">
           <div class="black-logo">
-            <img  src="/images/aboutBI01.png" />
-            
+            <img src="/images/aboutBI01.png" />
+
           </div>
           <div class="mint-logo">
             <img src="/images/aboutBI02.png" />
-            </div>
-          </div>
-          <div class="colors">
-            <div class="color">
-              <span class="color-circle"></span>
-              <span class="color-code">00AD84</span>
-            </div>
-            <div class="color">
-              <span class="color-circle"></span>
-              <span class="color-code">D4BFFF</span>
-            </div>
-            <div class="color">
-              <span class="color-circle"></span>
-              <span class="color-code">231815</span>
-            </div>
           </div>
         </div>
-        
+        <div class="colors">
+          <div class="color">
+            <span class="color-circle"></span>
+            <span class="color-code">00AD84</span>
+          </div>
+          <div class="color">
+            <span class="color-circle"></span>
+            <span class="color-code">D4BFFF</span>
+          </div>
+          <div class="color">
+            <span class="color-circle"></span>
+            <span class="color-code">231815</span>
+          </div>
+        </div>
       </div>
-    </section>
-  
-    <% include ../include/footer %>
-  </body>
+
+  </div>
+  </section>
+  </div>
+
+
+  <% include ../include/footer %>
+</body>
+
 </html>

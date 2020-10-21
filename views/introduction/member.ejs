@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <% include ../head %>
-    <title>Document</title>
-  </head>
-  <body class="about-container">
-    <div class="header"><% include ../include/header %></div>
-    
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <% include ../head %>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header"><% include ../include/header %></div>
+  <div class="about-container">
     <!-- about member -->
     <section class="about-us-section about-member">
-      <div class="about-section-title"><h2>운동친구 멤버</h2></div>
+      <div class="about-section-title">
+        <h2>운동친구 멤버</h2>
+      </div>
       <div class="about-section-contents">
         <div class="card">
           <div class="info">
@@ -99,7 +103,10 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <% include ../include/footer %>
-  </body>
+
+  <% include ../include/footer %>
+</body>
+
 </html>

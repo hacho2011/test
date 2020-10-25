@@ -87,6 +87,9 @@
   background: url(/images/member01.png);
   margin-bottom: 20px;
 }
+.about-member .card:last-child {
+  margin-bottom: 0;
+}
 
 .about-member .info-element {
   display: flex;

@@ -43,31 +43,31 @@
 }
 
 
-/* youtube-item */
+/* article-item */
 
-.youtube-item {
+.article-item {
     width: 340px; 
     height: 386px; 
     box-sizing: border-box;
     text-align: left;
 }
 
-.youtube-item .thumb {
+.article-item .thumb {
     width: 100%; 
     height: 191px; 
     background: #c4c4c4; 
     margin-bottom: 15px;
 }
-.youtube-item .thumb img{
+.article-item .thumb img{
     width:100%;
     height:100%;
 }
 
-.youtube-item .date {
+.article-item .date {
     margin-bottom: 10px;
 }
 
-.youtube-item .title {
+.article-item .title {
     margin-bottom: 10px;
 }
 

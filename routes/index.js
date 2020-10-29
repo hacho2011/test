@@ -37,6 +37,9 @@ router.get('/youtube', function (req, res, next) {
 router.get('/column', function (req, res, next) {
   res.render('column/column', { title: 'Express' });
 });
+router.get('/notFound', function (req, res, next) {
+  res.render('notFound/notFound', { title: 'Express' });
+});
 
 router.get('/column/detail', function (req, res, next) {
   res.render('column/column_detail', { title: 'Express' });
